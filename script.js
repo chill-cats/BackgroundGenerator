@@ -21,6 +21,7 @@ function setRandomColor() {
   color1.value = randomColorGen();
   color2.value = randomColorGen();
   body.style.background = `linear-gradient(to right, ${color1.value}, ${color2.value})`;
+  css.textContent = body.style.background + ";";
 }
 setRandomColor();
 
